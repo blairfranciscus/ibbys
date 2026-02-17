@@ -419,8 +419,9 @@ input, select, textarea{
 .staff-list{
   list-style: none;
   text-align: center;
-  margin: 3px 0 0 0;
+  margin: 4px 0 0 0;
   padding: 0;
+  line-height: 1.2;
 }
 
 .staff-list li{
@@ -429,6 +430,10 @@ input, select, textarea{
 
 .staff-list li + li::before{
   content: " \00b7 ";
+}
+
+.staff-list .staff-label + li::before{
+  content: " ";
 }
 
 .backtop{
